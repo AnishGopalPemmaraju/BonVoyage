@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -63,7 +66,7 @@ public class PackagesDTO {
     @NotBlank(message = "Package image is required")
     private String packageImage;
 
-    private PackageItineraryDTO packageItineraryDTO;
+    private List<PackageItineraryDTO> packageItineraryDTOS = new ArrayList<>();
 }
 
 /*

@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -47,5 +48,6 @@ public class Packages {
 
 
     @OneToMany(mappedBy = "packageDetails")
-    private List<PackagesItinerary> packagesItinerary;
+    private List<PackagesItinerary> packagesItinerary = new ArrayList<>();
 }
+

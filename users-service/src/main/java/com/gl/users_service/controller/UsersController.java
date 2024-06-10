@@ -21,7 +21,6 @@ public class UsersController {
     public UsersDTO loginUser(@Valid @RequestBody LoginDetailsDTO loginDetailsDTO){
         return usersService.loginUser(loginDetailsDTO);
     }
-
     @GetMapping("/{userName}")
    public UsersDTO getUserByUserName(@PathVariable String userName){
         return usersService.getUserByUserName(userName);

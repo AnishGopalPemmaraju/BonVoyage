@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -14,12 +16,12 @@ import lombok.Setter;
 @Table(name = "packagesItineraries")
 public class PackagesItinerary {
 
-    private String itineraryId;
-    private String day;
+    @EmbeddedId
+    private PackageItineraryKey id = new PackageItineraryKey();
     private String title;
     private String activities;
 
-    @ManyToOne
-    @JoinColumn(name = "packageID")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "packageId", referencedColumnName = "packageId",insertable = false,updatable = false)
     private Packages packageDetails;
 }

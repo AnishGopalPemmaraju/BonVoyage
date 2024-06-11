@@ -155,3 +155,13 @@ Pusers-service/src/main/java/com/gl/users_service/payload/UserBookingsAPIDTO.jav
 Nusers-service/src/main/java/com/gl/users_service/client/OpenFeignBookings.java,1\b\1beca2bad35198b08a459b8d214391da5beb99dd
 w
 GAPI-Gateway/src/main/java/com/gl/API_Gateway/ApiGatewayApplication.java,9\5\9570604fda5e1af75786aef9a6baa5027475ade8
+€
+Pusers-service/src/main/java/com/gl/users_service/controller/AdminController.java,f\d\fd80f80f892e57ac1ae5a02278cceccfd90f0410
+z
+Jusers-service/src/main/java/com/gl/users_service/service/AdminService.java,6\c\6ca253fcc23d97f18803712391fdae2224ba6b51
+v
+Fusers-service/src/main/java/com/gl/users_service/payload/AdminDTO.java,2\f\2fa08f89f4c07abaa9fac6e03118658c8b50180b
+~
+Nusers-service/src/main/java/com/gl/users_service/client/OpenFeignPackages.java,9\9\99de8e8faa7fdca74d0018d31bf4de2c4fe8daa7
+ƒ
+Susers-service/src/main/java/com/gl/users_service/service/impl/AdminServiceImpl.java,9\0\9089c09b1929cf7b4bfd7359a348902ca60ee52a

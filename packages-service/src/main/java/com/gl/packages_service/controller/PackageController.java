@@ -31,4 +31,9 @@ public class PackageController {
     public ResponseEntity<PackagesDTO> createPackage(@Valid @RequestBody PackagesDTO packagesDTO){
         return new ResponseEntity<>(packagesService.createPackage(packagesDTO), HttpStatus.CREATED);
     }
+
+    @GetMapping("/packagesCount")
+    public long getPackagesCount(){
+        return packagesService.getPackagesCount();
+    }
 }

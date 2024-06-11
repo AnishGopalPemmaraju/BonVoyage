@@ -11,4 +11,6 @@ import java.util.List;
 public interface OpenFeignBookings {
     @GetMapping("/api/bookings/{userId}")
     List<BookingDTO> getBookingsByUserId(@PathVariable String userId);
+    @GetMapping("/api/bookings/bookingsCount")
+     long getBookingsCount();
 }

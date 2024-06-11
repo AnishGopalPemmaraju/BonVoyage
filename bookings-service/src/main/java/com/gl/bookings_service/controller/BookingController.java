@@ -32,4 +32,9 @@ public class BookingController {
     public List<BookingDTO> deleteBooking(@PathVariable String userId, @PathVariable String bookingId){
         return bookingService.deleteBooking(userId,bookingId);
     }
+
+    @GetMapping("/bookingsCount")
+    public long getBookingsCount(){
+        return bookingService.getBookingsCount();
+    }
 }

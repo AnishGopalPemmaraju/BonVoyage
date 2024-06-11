@@ -1,22 +1,18 @@
 
 ~
-java:S4973F"<Strings and Boxed types should be compared using "equals()".(¡ŞØ{8ŞŞô”€2J$423caf6f-cc2e-4ea1-88db-103186710eb6
-~	java:S125"<This block of commented-out lines of code should be removed.(–¹º‡8ºõœ¬€2J$1321a00d-2a64-45b1-b3d5-807615bc329c
+java:S4973F"<Strings and Boxed types should be compared using "equals()".(¡ŞØ{8ŞŞô”€2J$da6e46f2-7727-4574-8b48-a8a22819442b
+~	java:S125"<This block of commented-out lines of code should be removed.(–¹º‡8ºõœ¬€2J$be7aafdd-fb59-4900-ad98-db929fe2ca64
 •
-java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(›¤âû8ğŞô”€2J$bc85ab36-bfc5-4076-8772-d0bebeef3d73
+java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(›¤âû8ğŞô”€2J$9439f296-b317-47bb-a05d-5bd7ace64724
 …
-java:S1612'"BReplace this lambda with method reference 'this::mapToBookingDTO'.(›¤âû8ğŞô”€2J$39b03da8-613d-46df-b980-51b65d76b976
-ƒ	java:S125,"<This block of commented-out lines of code should be removed.(Ä©Ùƒùÿÿÿÿ8ûì¬€2J$0f41b640-5d45-4208-97da-8c4bb20a526c
+java:S1612'"BReplace this lambda with method reference 'this::mapToBookingDTO'.(›¤âû8ğŞô”€2J$b784fd83-5b07-44f6-b3ec-7c9305f9ba95
+ƒ	java:S125,"<This block of commented-out lines of code should be removed.(Ä©Ùƒùÿÿÿÿ8ûì¬€2J$da41106c-1b4d-461d-9f31-8738a672f132
 •
-java:S62040"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(«ùÒø8ñŞô”€2J$7e0ae02c-94db-4654-8964-70ca47e9bc46
+java:S62040"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(«ùÒø8ñŞô”€2J$347129c9-06d7-45ec-b8f2-5a53656bf315
 …
-java:S16120"BReplace this lambda with method reference 'this::mapToBookingDTO'.(«ùÒø8ñŞô”€2J$6e4d61b2-1cbe-46b6-bc2f-39ee00008700
-]	java:S125@"<This block of commented-out lines of code should be removed.(Ä©Ùƒùÿÿÿÿ8¾”Ÿ¬€2
+java:S16120"BReplace this lambda with method reference 'this::mapToBookingDTO'.(«ùÒø8ñŞô”€2J$a8c64db0-69c3-48a0-a99a-67a055b8628f
+ƒ	java:S125@"<This block of commented-out lines of code should be removed.(Ä©Ùƒùÿÿÿÿ8¾”Ÿ¬€2J$0954c04e-ffea-47ab-9b3c-d3dffb56d2a9
 š
-java:S6204L"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(×í³šúÿÿÿÿ8óŞô”€2J$3f154edb-b08e-4847-9457-9c811292873f
+java:S6204L"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(×í³šúÿÿÿÿ8óŞô”€2J$f9ee4a29-5c9f-4586-a355-66fb3c66a703
 Š
-java:S1612L"BReplace this lambda with method reference 'this::mapToBookingDTO'.(×í³šúÿÿÿÿ8óŞô”€2J$f978547b-56a8-4758-bb27-06f405d33d5f
-
-java:S1128	"HRemove this unused import 'com.gl.bookings_service.payload.PackagesDTO'.(¬ß¢üûÿÿÿÿ8Œ£¬€2J$deb82a10-d915-4f13-a24a-5f9bbcb83cde
-b
-java:S1128"ERemove this unused import 'com.gl.bookings_service.payload.UsersDTO'.(Ì¤éã8Ã”Ÿ¬€2
+java:S1612L"BReplace this lambda with method reference 'this::mapToBookingDTO'.(×í³šúÿÿÿÿ8óŞô”€2J$f5ae427d-f88d-4b16-b1a0-fe563576fa0e

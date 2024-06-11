@@ -23,6 +23,8 @@ public class Users {
     @Column(nullable = false,unique = true)
     private String userName;
     @Column(nullable = false,unique = true)
+    private String name;
+    @Column(nullable = false,unique = true)
     private String userEmail;
     @Column(nullable = false,unique = true)
     private String userPhone;

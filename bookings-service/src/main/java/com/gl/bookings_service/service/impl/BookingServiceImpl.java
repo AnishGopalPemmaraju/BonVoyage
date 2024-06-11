@@ -75,6 +75,10 @@ public class BookingServiceImpl implements BookingService {
 
         return bookingRepository.findByUserId(userId).stream().map( booking1-> mapToBookingDTO(booking1)).collect(Collectors.toList());
     }
+    @Override
+    public long getBookingsCount() {
+        return bookingRepository.count();
+    }
 
     public Booking mapToBooking(BookingDTO bookingDTO){
         return BookingsServiceApplication.mapper().map(bookingDTO,Booking.class);

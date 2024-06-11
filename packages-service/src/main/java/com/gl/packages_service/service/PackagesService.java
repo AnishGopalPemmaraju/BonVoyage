@@ -11,4 +11,5 @@ public interface PackagesService {
     PackagesDTO getPackageByLocation(String location);
     PackagesDTO getPackageById(String packageId);
     PackagesDTO createPackage(PackagesDTO packagesDTO);
+    long getPackagesCount();
 }

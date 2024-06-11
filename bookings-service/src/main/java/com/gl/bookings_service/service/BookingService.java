@@ -11,4 +11,5 @@ public interface BookingService {
     List<BookingDTO> getBookingsByUserId(String userId);
     BookingDTO updateBooking(UpdateBookingDTO updateBookingDTO);
     List<BookingDTO> deleteBooking(String userId, String bookingId);
+    long getBookingsCount();
 }

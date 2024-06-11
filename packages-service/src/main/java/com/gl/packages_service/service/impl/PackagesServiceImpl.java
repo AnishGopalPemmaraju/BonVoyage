@@ -45,6 +45,11 @@ public class PackagesServiceImpl implements PackagesService {
         return mapToPackageDTO(packageRepository.save(mapToPackage(packagesDTO)));
     }
 
+    @Override
+    public long getPackagesCount() {
+        return packageRepository.count();
+    }
+
     public PackagesDTO mapToPackageDTO(Packages packages){
 
         return PackagesServiceApplication.modelMapper().map(packages, PackagesDTO.class);

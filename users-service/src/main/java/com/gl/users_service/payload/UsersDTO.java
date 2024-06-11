@@ -24,6 +24,11 @@ public class UsersDTO {
     @NotNull
     private String userName;
 
+    @NotEmpty(message = "User's Name can't be empty!")
+    @Size(min = 3,message = "User's Name must be minimum 3 characters")
+    @NotNull
+    private String name;
+
     @NotEmpty(message = "User Email can't be empty!")
     @Email
     private String userEmail;

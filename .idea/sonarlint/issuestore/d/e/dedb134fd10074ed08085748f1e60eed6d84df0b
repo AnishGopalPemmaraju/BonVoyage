@@ -1,7 +1,9 @@
 
-
-java:S1128"FRemove this unused import 'com.gl.users_service.entity.UsersWishList'.(ãÛÆÕıÿÿÿÿ8©§ğÅÿ1J$3dc6c92c-80e5-4390-a717-c2af0af52e3a
-y
-java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE8ª§ğÅÿ1J$4c53e3c1-4d36-4984-af6f-13c1e967ca2a
-‚
-java:S1128":Remove this unused import 'jakarta.persistence.OneToMany'.( ëîéúÿÿÿÿ8ª§ğÅÿ1J$909dfce3-2b64-4e27-bca9-85ee32b9e19d
+h
+java:S1128"FRemove this unused import 'com.gl.users_service.entity.UsersWishList'.(ãÛÆÕıÿÿÿÿ8Éòğš€2
+S
+java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE8Êòğš€2
+\
+java:S1128":Remove this unused import 'jakarta.persistence.OneToMany'.( ëîéúÿÿÿÿ8Êòğš€2
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Êòğš€2

@@ -1,0 +1,15 @@
+
+š
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¯•÷Üùÿÿÿÿ8İËŸ„€2J$82a63dc3-1c68-4acc-8f44-94e6a958ee11
+ƒ
+java:S1612";Replace this lambda with method reference 'this::mapToDTO'.(¯•÷Üùÿÿÿÿ8ßËŸ„€2J$34ce5de4-1f9f-4567-a76b-7a534c2bb239
+š
+java:S6204%"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Üò‰çùÿÿÿÿ8àËŸ„€2J$89de99b1-073b-4f27-b5ef-7b672de16448
+ƒ
+java:S1612%";Replace this lambda with method reference 'this::mapToDTO'.(Üò‰çùÿÿÿÿ8àËŸ„€2J$29655e3c-613b-4d63-bfdd-d8595e9ce40a
+—
+java:S1128"ORemove this unused import 'com.gl.packages_service.PackagesServiceApplication'.(”¦ñıÿÿÿÿ8Á¬¥„€2J$dca7492c-d496-47ec-ac07-8804dbf0871f
+’
+java:S1128"ORemove this unused import 'com.gl.packages_service.entity.PackageItineraryKey'.(ç±—î8Á¬¥„€2J$0ee6b3d8-ec10-4f54-960c-22f4438ea3de
+Š
+java:S1128	"HRemove this unused import 'com.gl.packages_service.payload.PackagesDTO'.(˜Ší`8Á¬¥„€2J$c79d90b2-4f35-4ab9-bd6b-f0fb417a5072

@@ -1,0 +1,7 @@
+
+š
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(î¬€¥øÿÿÿÿ8¿›İÿ1J$1e5734fa-8dd2-47ee-b5a5-e9dd53092d74
+š
+java:S6204/"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(î¬€¥øÿÿÿÿ8ƒ¿›İÿ1J$cf695398-10e2-45e4-b015-4f0d6168b6e2
+š
+java:S62044"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(î¬€¥øÿÿÿÿ8„¿›İÿ1J$114bf27b-4f07-4d2f-bda4-87cfe3279568

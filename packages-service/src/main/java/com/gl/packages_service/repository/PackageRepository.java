@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface PackageRepository extends JpaRepository<Packages,String> {
     Packages findByPackageCity(String packageCity);
+    List<Packages> findByPackageCityIgnoreCase(String packageCity);
+
 }

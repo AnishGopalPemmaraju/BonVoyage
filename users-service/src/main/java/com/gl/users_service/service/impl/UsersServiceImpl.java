@@ -3,14 +3,12 @@ package com.gl.users_service.service.impl;
 import com.gl.users_service.client.OpenFeignBookings;
 import com.gl.users_service.entity.Users;
 import com.gl.users_service.exception.ResourceNotFoundException;
-import com.gl.users_service.payload.BookingDTO;
-import com.gl.users_service.payload.LoginDetailsDTO;
-import com.gl.users_service.payload.UserBookingsAPIDTO;
-import com.gl.users_service.payload.UsersDTO;
+import com.gl.users_service.payload.*;
 import com.gl.users_service.repository.UsersRepository;
 import com.gl.users_service.service.UsersService;
 import com.gl.users_service.util.MapperLibrary;
 import lombok.AllArgsConstructor;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +20,7 @@ public class UsersServiceImpl implements UsersService {
     UsersRepository usersRepository;
     OpenFeignBookings openFeignBookings;
     @Override
-    public UsersDTO addUser(UsersDTO usersDTO) {
+    public LoginResponseDTO addUser(UsersDTO usersDTO) {
         usersDTO.setUserID(generateUserId());
 
         /*Password Encryption using BCrypt*/
@@ -30,17 +28,21 @@ public class UsersServiceImpl implements UsersService {
         String hashedPassword = passwordEncoder.encode(usersDTO.getUserPassword());
         usersDTO.setUserPassword(hashedPassword);
 
-        return MapperLibrary.mapToUsersDto(usersRepository.save(MapperLibrary.mapToUsers(usersDTO)));
+        try {
+            Users savedUser = usersRepository.save(MapperLibrary.mapToUsers(usersDTO));
+            return new LoginResponseDTO(savedUser.getUserID(), savedUser.getName(), savedUser.getUserRole(), true, null);
+        } catch (DataIntegrityViolationException e) {
+            return new LoginResponseDTO(null, null, null, false, "User already exists, Please Login.");
+        }
     }
 
     @Override
-    public UserBookingsAPIDTO loginUser(LoginDetailsDTO loginDetailsDTO) {
+    public LoginResponseDTO loginUser(LoginDetailsDTO loginDetailsDTO) {
         Users users = usersRepository.findByUserEmail(loginDetailsDTO.getUserEmail());
-        if (users==null || !authenticate(loginDetailsDTO.getUserPassword(), users)){
-            throw new ResourceNotFoundException("Invalid Login Details!");
+        if (users == null || !authenticate(loginDetailsDTO.getUserPassword(), users)) {
+            return new LoginResponseDTO(null, null,null, false, "Invalid Login Details!");
         }
-        List<BookingDTO> bookingDTOList = openFeignBookings.getBookingsByUserId(users.getUserID());
-        return new UserBookingsAPIDTO(MapperLibrary.mapToUsersDto(users),bookingDTOList);
+        return new LoginResponseDTO(users.getUserID(), users.getName(), users.getUserRole(),true, null);
     }
 
     @Override

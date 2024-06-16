@@ -22,9 +22,9 @@ public class Users {
     private String userID;
     @Column(nullable = false,unique = true)
     private String userName;
-    @Column(nullable = false,unique = true)
-    private String name;
     @Column(nullable = false)
+    private String name;
+    @Column(nullable = false,unique = true)
     private String userEmail;
     @Column(nullable = false,unique = true)
     private String userPhone;

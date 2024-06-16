@@ -7,9 +7,16 @@ import java.util.List;
 
 public interface PackagesService {
 
-    List<PackagesDTO> getPackages();
-    PackagesDTO getPackageByLocation(String location);
-    PackagesDTO getPackageById(String packageId);
-    PackagesDTO createPackage(PackagesDTO packagesDTO);
-    long getPackagesCount();
+//    List<PackagesDTO> getPackages();
+//    PackagesDTO getPackageByLocation(String location);
+//    PackagesDTO getPackageById(String packageId);
+//    PackagesDTO createPackage(PackagesDTO packagesDTO);
+//    long getPackagesCount();
+
+        List<PackagesDTO> getPackages();
+        List<PackagesDTO> getPackageByLocation(String packageCity);
+        PackagesDTO getPackageById(String packageId);
+        PackagesDTO createPackage(PackagesDTO packagesDTO);
+        long getPackagesCount();
 }
+

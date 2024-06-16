@@ -12,6 +12,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 @AllArgsConstructor
 @Service
 public class PackagesServiceImpl implements PackagesService {
@@ -24,13 +26,14 @@ public class PackagesServiceImpl implements PackagesService {
     }
 
     @Override
-    public PackagesDTO getPackageByLocation(String packageCity) {
-        Packages packages = packageRepository.findByPackageCity(packageCity);
-        if (packages==null){
-            throw new PackageNotFoundException("Packages","Package City",packageCity);
+    public List<PackagesDTO> getPackageByLocation(String packageCity) {
+        List<Packages> packagesList = packageRepository.findByPackageCityIgnoreCase(packageCity);
+        if (packagesList.isEmpty()) {
+            throw new PackageNotFoundException("Packages", "Package City", packageCity);
         }
-        return mapToPackageDTO(packages);
+        return packagesList.stream().map(this::mapToPackageDTO).collect(Collectors.toList());
     }
+
 
     @Override
     public PackagesDTO getPackageById(String packageId) {

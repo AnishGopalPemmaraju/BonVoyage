@@ -20,7 +20,7 @@ public class PackageController {
         return packagesService.getPackages();
     }
     @GetMapping("/{location}")
-    public PackagesDTO getPackageByLocation(@PathVariable String location){
+    public List<PackagesDTO> getPackageByLocation(@PathVariable String location) {
         return packagesService.getPackageByLocation(location);
     }
     @GetMapping("/onePackage/{packageId}")
